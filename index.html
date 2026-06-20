@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="ClearNota — Inteligência Artificial para auditar NF-e e evitar multas fiscais.">
+  <title>ClearNota | Auditoria inteligente de NF-e</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header" id="topo">
+    <nav class="nav container">
+      <a href="#topo" class="logo">
+        <img src="logo.png" alt="" class="logo-img" width="60" height="60">
+        ClearNota
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#problema">Problema</a></li>
+        <li><a href="#solucao">Solução</a></li>
+        <li><a href="#beneficios">Benefícios</a></li>
+        <li><a href="#como-funciona">Como funciona</a></li>
+        <li><a href="#contato" class="btn btn-sm btn-primary">Demonstração</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="hero" id="hero">
+      <div class="hero-bg"></div>
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <span class="badge">Plataforma de auditoria fiscal com IA</span>
+          <h1>Evite multas fiscais antes que elas aconteçam</h1>
+          <p class="hero-subtitle">
+            A ClearNota utiliza Inteligência Artificial para identificar automaticamente
+            erros e inconsistências em documentos fiscais eletrônicos.
+          </p>
+          <div class="hero-actions">
+            <a href="#contato" class="btn btn-primary btn-lg">Solicitar Demonstração</a>
+            <a href="#solucao" class="btn btn-outline btn-lg">Saiba Mais</a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat">
+              <strong>99,2%</strong>
+              <span>precisão estrutural</span>
+            </div>
+            <div class="stat">
+              <strong>10x</strong>
+              <span>mais rápido que conferência manual</span>
+            </div>
+            <div class="stat">
+              <strong>24/7</strong>
+              <span>auditoria contínua</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual reveal delay-1">
+          <div class="dashboard-card">
+            <div class="dashboard-header">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="dashboard-title">Painel ClearNota</span>
+            </div>
+            <div class="dashboard-body">
+              <div class="dash-row ok">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                <span>nota_4821.xml — Estrutura validada</span>
+              </div>
+              <div class="dash-row ok">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+                <span>nota_4822.xml — Assinatura digital OK</span>
+              </div>
+              <div class="dash-row alert">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>
+                <span>nota_4823.xml — Anomalia detectada (ICMS)</span>
+              </div>
+              <div class="dash-row alert">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 9v4m0 4h.01M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/></svg>
+                <span>nota_4824.xml — Inconsistência em infCpl</span>
+              </div>
+              <div class="dash-footer">
+                <span>Relatório gerado em 2,4s</span>
+                <span class="pill">3 alertas</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="problema">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">O desafio</span>
+          <h2>O volume fiscal cresce. Os erros também.</h2>
+          <p>Empresas de todos os portes enfrentam um gargalo silencioso na gestão de documentos fiscais eletrônicos.</p>
+        </div>
+        <div class="problem-grid">
+          <article class="card problem-card reveal">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+              </svg>
+            </div>
+            <h3>Milhares de documentos</h3>
+            <p>Empresas recebem e emitem milhares de NF-es por mês. Cada XML carrega dezenas de campos que precisam estar corretos.</p>
+          </article>
+          <article class="card problem-card reveal delay-1">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <h3>Conferência manual lenta</h3>
+            <p>A revisão humana é demorada, cara e sujeita a falhas. Equipes fiscais gastam horas em tarefas repetitivas e de alto risco.</p>
+          </article>
+          <article class="card problem-card reveal delay-2">
+            <div class="card-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0z"/>
+                <line x1="12" y1="9" x2="12" y2="13"/>
+                <line x1="12" y1="17" x2="12.01" y2="17"/>
+              </svg>
+            </div>
+            <h3>Multas e perda de créditos</h3>
+            <p>Erros não detectados geram autuações, multas, glosas e perda de créditos tributários — prejuízos que poderiam ser evitados.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="solucao">
+      <div class="container solution-grid">
+        <div class="solution-text reveal">
+          <span class="section-tag">A solução</span>
+          <h2>Auditoria fiscal inteligente, do XML ao relatório</h2>
+          <p>A ClearNota automatiza toda a cadeia de verificação de NF-e, combinando regras fiscais, validação digital e modelos de IA.</p>
+          <ul class="check-list">
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+              Analisa NF-es automaticamente, em lote ou em tempo real
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+              Valida estrutura XML e integridade da assinatura digital
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+              Detecta anomalias e inconsistências com aprendizado de máquina
+            </li>
+            <li>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6L9 17l-5-5"/></svg>
+              Gera relatórios claros e acionáveis para sua equipe fiscal
+            </li>
+          </ul>
+        </div>
+        <div class="solution-visual reveal delay-1">
+          <div class="feature-stack">
+            <div class="feature-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 12l2 2 4-4"/></svg>
+              Validação XSD oficial
+            </div>
+            <div class="feature-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              Assinatura digital verificada
+            </div>
+            <div class="feature-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2a4 4 0 014 4v1h1a3 3 0 013 3v8a3 3 0 01-3 3H7a3 3 0 01-3-3v-8a3 3 0 013-3h1V6a4 4 0 014-4z"/><circle cx="9" cy="13" r="1"/><circle cx="15" cy="13" r="1"/></svg>
+              Detecção de anomalias com IA
+            </div>
+            <div class="feature-pill">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+              Relatório explicativo em tópicos
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="beneficios">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Benefícios</span>
+          <h2>Por que escolher a ClearNota?</h2>
+          <p>Resultados mensuráveis para equipes fiscais, contábeis e de compliance.</p>
+        </div>
+        <div class="benefits-grid">
+          <article class="card benefit-card reveal">
+            <div class="card-icon icon-blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h3>Redução de riscos fiscais</h3>
+            <p>Identifique irregularidades antes do envio à SEFAZ ou da escrituração, reduzindo exposição a penalidades.</p>
+          </article>
+          <article class="card benefit-card reveal delay-1">
+            <div class="card-icon icon-blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <circle cx="12" cy="12" r="10"/>
+                <polyline points="12 6 12 12 16 14"/>
+              </svg>
+            </div>
+            <h3>Economia de tempo</h3>
+            <p>Automatize horas de conferência manual. Sua equipe foca em exceções, não em revisão linha a linha.</p>
+          </article>
+          <article class="card benefit-card reveal delay-2">
+            <div class="card-icon icon-blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <rect x="2" y="3" width="20" height="14" rx="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+            </div>
+            <h3>Auditoria automatizada</h3>
+            <p>Pipeline multiagente analisa estrutura, assinatura e padrões atípicos em cada documento fiscal.</p>
+          </article>
+          <article class="card benefit-card reveal delay-3">
+            <div class="card-icon icon-blue">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M22 11.08V12a10 10 0 11-5.93-9.14"/>
+                <polyline points="22 4 12 14.01 9 11.01"/>
+              </svg>
+            </div>
+            <h3>Maior conformidade tributária</h3>
+            <p>Mantenha seus documentos alinhados às normas vigentes e preserve créditos tributários com confiança.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="como-funciona">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Como funciona</span>
+          <h2>Do XML ao relatório em segundos</h2>
+          <p>Um fluxo transparente, auditável e escalável para qualquer volume de NF-e.</p>
+        </div>
+        <div class="flow reveal">
+          <div class="flow-step">
+            <div class="flow-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+              </svg>
+            </div>
+            <h4>NF-e XML</h4>
+            <p>Importação do documento fiscal eletrônico</p>
+          </div>
+          <div class="flow-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </div>
+          <div class="flow-step">
+            <div class="flow-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                <path d="M9 12l2 2 4-4"/>
+              </svg>
+            </div>
+            <h4>Validação Estrutural</h4>
+            <p>Conferência contra o schema XSD oficial</p>
+          </div>
+          <div class="flow-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </div>
+          <div class="flow-step">
+            <div class="flow-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              </svg>
+            </div>
+            <h4>Verificação de Assinatura</h4>
+            <p>Integridade digital e compatibilidade do emitente</p>
+          </div>
+          <div class="flow-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </div>
+          <div class="flow-step">
+            <div class="flow-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M12 2a4 4 0 014 4v1h1a3 3 0 013 3v8a3 3 0 01-3 3H7a3 3 0 01-3-3v-8a3 3 0 013-3h1V6a4 4 0 014-4z"/>
+              </svg>
+            </div>
+            <h4>Detecção de Anomalias com IA</h4>
+            <p>Modelos de ML identificam padrões atípicos na nota e nos itens</p>
+          </div>
+          <div class="flow-arrow" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </div>
+          <div class="flow-step">
+            <div class="flow-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/>
+                <line x1="8" y1="13" x2="16" y2="13"/>
+                <line x1="8" y1="17" x2="12" y2="17"/>
+              </svg>
+            </div>
+            <h4>Relatório Explicativo</h4>
+            <p>Resumo claro em tópicos com sugestões de correção</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="diferenciais">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-tag">Diferenciais</span>
+          <h2>Tecnologia fiscal de ponta</h2>
+        </div>
+        <div class="diff-grid">
+          <div class="diff-item reveal">
+            <div class="diff-number">01</div>
+            <h3>IA aplicada ao setor fiscal</h3>
+            <p>Modelos de aprendizado de máquina treinados para detectar inconsistências em dados de NF-e, com explicabilidade via SHAP.</p>
+          </div>
+          <div class="diff-item reveal delay-1">
+            <div class="diff-number">02</div>
+            <h3>Identificação automática</h3>
+            <p>Sem planilhas, sem conferência manual. A plataforma aponta erros estruturais, de assinatura e anomalias estatísticas.</p>
+          </div>
+          <div class="diff-item reveal delay-2">
+            <div class="diff-number">03</div>
+            <h3>Escalabilidade</h3>
+            <p>Processe dezenas ou milhares de documentos por lote. Arquitetura multiagente preparada para alto volume.</p>
+          </div>
+          <div class="diff-item reveal delay-3">
+            <div class="diff-number">04</div>
+            <h3>Fácil utilização</h3>
+            <p>Interface intuitiva, relatórios em linguagem clara e integração simples ao fluxo fiscal da sua empresa.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta" id="contato">
+      <div class="container cta-inner reveal">
+        <h2>Transforme sua auditoria fiscal</h2>
+        <p>Agende uma demonstração gratuita e veja a ClearNota em ação com os seus próprios documentos.</p>
+        <a href="mailto:contato@clearnota.com?subject=Demonstração%20ClearNota" class="btn btn-white btn-lg">Entrar em Contato</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="footer-name">ClearNota</span>
+        <p>Auditoria inteligente de Notas Fiscais Eletrônicas.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Contato</h4>
+        <ul>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:contato@clearnota.com">contato@clearnota.com</a>
+          </li>
+          <li>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <a href="tel:+551140028922">(11) 4002-8922</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom container">
+      <p>&copy; 2026 ClearNota. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
